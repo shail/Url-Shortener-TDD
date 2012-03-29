@@ -9,7 +9,8 @@ describe Url do
 		subject { @url }
 
 		it { should respond_to(:url) }
-		it { should respond_to(:shortened_url)}
+		it { should respond_to(:shortened_url) }
+		it { should respond_to(:user) }
 
 	describe "when url is not present" do
 		before { @url.url = " " }
